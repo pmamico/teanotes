@@ -26,3 +26,5 @@ markdown_extensions:
   - toc:
      toc_depth: 0
      permalink: false
+extra:
+  generator: false
