@@ -32,28 +32,7 @@ It has strong hydrating properties and its sparkling, shimmering appearance adds
 Overall, this Yin Zhen tea is a refreshing and energizing beverage that promotes a sense of well-being.
 
 
-{{{wheel
-floral: 3
-stone: 3
-tropical: 4
-citrus: 3
-berry: 3
-aroma: 3
-finish: 4
-balance: 4
-body: 2
-tannic: 1
-woody: 0
-smoky: 0
-chocolaty: 0
-earthy: 0
-savory: 0
-vegetal: 0
-malty: 1
-sweet: 4
-spicy: 1
-grassy: 1
-}}}
+<img src="/img/wheel/yin-zhen.svg" width="70%"></img>
 
 <div style="visibility: hidden">
 ................................................................................................................................................................................................

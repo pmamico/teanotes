@@ -29,29 +29,7 @@ The tea leaves was first withered and then roasted in an oven, which gives them 
 Darker color and a deeper, more complex flavor compared to other oolong teas.   
 This energizing tea is sure to invigorate your senses and leave you feeling refreshed.
 
-
-{{{wheel
-floral: 0
-stone: 4
-tropical: 1
-citrus: 1
-berry: 1
-aroma: 5
-finish: 4
-balance: 2
-body: 4
-tannic: 3
-woody: 4
-smoky: 5
-chocolaty: 3
-earthy: 4
-savory: 3
-vegetal: 2
-malty: 2
-sweet: 1
-spicy: 0
-grassy: 0
-}}}
+<img src="/img/wheel/mi-lan-xiang.svg" width="70%"></img>
 
 <div style="visibility: hidden">
 ................................................................................................................................................................................................

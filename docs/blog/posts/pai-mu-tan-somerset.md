@@ -29,28 +29,7 @@ Steep no.: 4
 Bai Mu Dan, also known as White Peony, is a type of Chinese white tea made from the youngest leaves and buds of the tea plant.  
 This particular tea has a delicate and floral flavor with notes of honey, and a light body that brews into a pale golden color.
 
-{{{wheel
-floral: 3
-stone: 4
-tropical: 0
-citrus: 0
-berry: 2
-aroma: 3
-finish: 3
-balance: 3
-body: 2
-tannic: 1
-woody: 1
-smoky: 1
-chocolaty: 1
-earthy: 2
-savory: 3
-vegetal: 3
-malty: 3
-sweet: 2
-spicy: 1
-grassy: 1
-}}}
+<img src="/img/wheel/pai-mu-tan-somerset.svg" width="70%"></img>
 
 <div style="visibility: hidden">
 ................................................................................................................................................................................................

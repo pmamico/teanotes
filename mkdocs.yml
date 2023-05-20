@@ -1,7 +1,7 @@
 site_name: TeaTime
 theme:
   name: material
-  logo: teapot.png
+  logo: img/teapot.png
   language: en
   palette:
     primary: white
@@ -9,11 +9,12 @@ nav:
   - Blog:
       - blog/index.md
 plugins:
-  - blog
+  - blog:
+      post_readtime_words_per_minute: 200
+      pagination_per_page: 2
 extra_css:
   - frame.css
 markdown_extensions:
-  - markdown_wheel_block:WheelExtension
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
