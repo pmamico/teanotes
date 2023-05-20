@@ -1,0 +1,28 @@
+site_name: TeaTime
+theme:
+  name: material
+  language: en
+  palette:
+    primary: white
+nav:
+  - Blog:
+      - blog/index.md
+plugins:
+  - blog
+extra_css:
+  - frame.css
+markdown_extensions:
+  - markdown_wheel_block:WheelExtension
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  -  attr_list
+  - md_in_html
+  - toc:
+     toc_depth: 0
+     permalink: false
