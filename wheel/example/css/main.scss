@@ -1,0 +1,17 @@
+@import 'flavor-wheel';
+@import 'wheel-control';
+
+.page-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start
+}
+
+.page-container__wheel-control {
+  flex: 0 0 auto;
+}
+
+.page-container__wheel-container {
+  flex: 1 100%;
+  max-width: 850px;
+}

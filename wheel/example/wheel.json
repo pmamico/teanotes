@@ -1,0 +1,18 @@
+[
+  { "salty": 5 },
+  { "spicy": 2 },
+  { "floral": 3 },
+  { "sour/tart": 4 },
+  { "sweet": 5 },
+  { "linger/\nfinish": 1 },
+  { "clean": 2 },
+  { "body": 3 },
+  { "savory": 4 },
+  { "bitter": 5 },
+  { "smoky": 1 },
+  { "caramel": 2 },
+  { "chocolate": 3 },
+  { "stone\nfruit": 4 },
+  { "citrus\nfruit": 5 },
+  { "berry\nfruit": 1 }
+]
