@@ -29,7 +29,7 @@ class WheelBlockProcessor(BlockProcessor):
 
         url_param = '&'.join([f"{key}={value}" for key, value in [line.split(': ') for line in block.split('\n') if line]])
 
-        src = "http://209.38.240.42:8080/?"+url_param
+        src = "http://localhost:8080/?"+url_param
 
         content_blocks = []
 

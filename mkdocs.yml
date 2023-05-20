@@ -1,6 +1,7 @@
 site_name: TeaTime
 theme:
   name: material
+  logo: teapot.png
   language: en
   palette:
     primary: white
