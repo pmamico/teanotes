@@ -27,7 +27,7 @@ Steep no.: 5
 It was a rainy day with golden sunshine as I walked along Váci street after a long day at work.  
 Not only the sunshine, but my tea today was also golden.   
 The _Golden steed eyebrow_ is a summer harvested and heavily fermented tea  
-from the Wuyi mountains. The cloudy infusion has the luscious aroma of autumn leaves along with mellow dark cocoa flavours.  
+from the Wuyi mountains. The cloudy infusion has the luscious aroma of autumn leaves along with mellow dark cocoa notes.  
 What surprised me a lot was that I discovered a lot of citrusy and rosé-like flavors in it.
 
 <img src="/img/wheel/golden_steed_eyebrow.svg" width="70%"></img>
