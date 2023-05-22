@@ -5,13 +5,14 @@ theme:
   language: en
   palette:
     primary: white
+    scheme: default
 nav:
   - Blog:
       - blog/index.md
 plugins:
   - blog:
       post_readtime_words_per_minute: 200
-      pagination_per_page: 2
+      pagination_per_page: 4
 extra_css:
   - frame.css
 markdown_extensions:
@@ -23,7 +24,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  -  attr_list
+  - attr_list
   - md_in_html
   - toc:
      toc_depth: 0

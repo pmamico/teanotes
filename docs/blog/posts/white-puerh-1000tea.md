@@ -30,7 +30,7 @@ This tea was made from young tea leaves that are allowed to wither and dry natur
 Characterized by its purity, balance, and a sensation that almost  
 mirrors the act of breathing while drinking.  
 This tea boasts a moderate body and a floral aroma that is sure to delight the senses.  
-Great for relax.  
+Good for relaxation.  
 
 <img src="/img/wheel/white-puerh-1000tea.svg" width="70%"></img>
 
