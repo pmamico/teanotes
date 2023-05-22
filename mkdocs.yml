@@ -31,4 +31,4 @@ markdown_extensions:
      permalink: false
 extra:
   generator: false
-  favicon: 'img/favicon.png'
+  favicon: 'img/favicon.ico'
