@@ -1,4 +1,4 @@
-site_name: TeaTime
+site_name: TeaNotes
 theme:
   name: material
   logo: img/teapot.png
@@ -31,3 +31,4 @@ markdown_extensions:
      permalink: false
 extra:
   generator: false
+  favicon: 'img/favicon.png'
