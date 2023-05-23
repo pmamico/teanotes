@@ -1,10 +1,9 @@
 ---
-draft: true
 date: 2023-05-22
 categories:
 - Black
 ---
-# Golden steed eyebrow
+# Golden Steed Eyebrow
 
 :material-star: :material-star: :material-star: :material-star: :material-star:
 

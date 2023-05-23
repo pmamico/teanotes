@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2023-05-15
 categories:
 - White
