@@ -1,0 +1,3 @@
+#!/bin/bash
+#
+ssh teanotes "git -C teanotes pull"
