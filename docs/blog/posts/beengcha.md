@@ -11,7 +11,7 @@ categories:
 - **General**  
 Varietal: Black Pu-Erh
 Merchant: 1000Tea  
-Harvested: 201ö  
+Harvested: 2019   
 Sampled: 100 g  
 - **Brew Stats**  
 Weight: 7 g   
@@ -28,12 +28,10 @@ And mellow notes that leave no waste.
 
 <img src="/img/wheel/beengcha.svg" width="70%"></img>
 <!-- more -->
-<img src="/img/gallery/beengcha.jpeg" width="75%"/>
 
 ## Music recommendation
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1divptdjcWXvF1aflfTQnw?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6qReWcyQMZLn8pRwin3r0u?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 
 

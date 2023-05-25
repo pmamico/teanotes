@@ -28,6 +28,11 @@ Guangxi is a province in southern China that is known for its diverse landscape 
 This tea is produced in this region and has a sweet, slightly floral aroma and a bright, shiny flavor that finishes with a minimal green aftertaste.  
 
 <img src="/img/wheel/guangxi.svg" width="70%"></img>
+<!-- more -->
+
+## Music recommendation
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/078uGKAOtbSBRXib6146Tx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 <div style="visibility: hidden">
 ................................................................................................................................................................................................
