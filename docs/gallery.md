@@ -4,48 +4,49 @@
         <h1 class="text-center">
           <small><em>Gallery</em></small>
         </h1>
+        <!-- a href="/img/gallery/winter_window.jpeg">muta</a-->
         <!-- Galley wrapper that contains all items -->
         <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
           <!-- Use figure for a more semantic html -->
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
-            <a href="/img/gallery/winter_window.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl">
+            <a href="/img/gallery/winter_window.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
               <!-- Thumbnail -->
               <img src="/img/gallery/winter_window.jpeg" itemprop="thumbnail" alt="Image description">
             </a>
           </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" style="display: none">
             <a href="/img/gallery/hanafuda.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl">
               <img src="/img/gallery/hanafuda.jpeg" itemprop="thumbnail" alt="Image description">
             </a>
           </figure>
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/beengcha_vinyl.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl">
+            <a href="/img/gallery/beengcha_vinyl.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
               <img src="/img/gallery/beengcha_vinyl.jpeg" itemprop="thumbnail" alt="Image description">
             </a>
           </figure>
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/japankert.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl">
+            <a href="/img/gallery/japankert.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
               <img src="/img/gallery/japankert.jpeg" itemprop="thumbnail" alt="Image description">
             </a>
           </figure>
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/kanna.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl">
+            <a href="/img/gallery/kanna.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" >
               <img src="/img/gallery/kanna.jpeg" itemprop="thumbnail" alt="Image description">
             </a>
           </figure>
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/puerh_zoom.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl">
+            <a href="/img/gallery/puerh_zoom.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
               <img src="/img/gallery/puerh_zoom.jpeg" itemprop="thumbnail" alt="Image description">
             </a>
           </figure>
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/allo_keszlet.jpeg" data-caption="" data-width="480" data-height="600" itemprop="contentUrl">
+            <a href="/img/gallery/allo_keszlet.jpeg" data-caption="" data-width="480" data-height="600" itemprop="contentUrl" style="display: none">
               <img src="/img/gallery/allo_keszlet.jpeg" itemprop="thumbnail" alt="Image description">
             </a>
           </figure>
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/napfeny.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl">
+            <a href="/img/gallery/napfeny.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
               <img src="/img/gallery/napfeny.jpeg" itemprop="thumbnail" alt="Image description">
             </a>
           </figure>
