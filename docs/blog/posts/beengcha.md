@@ -28,10 +28,20 @@ And mellow notes that leave no waste.
 
 <img src="/img/wheel/beengcha.svg" width="70%"></img>
 <!-- more -->
-<img src="/img/gallery/beengcha.jpeg" width="50%"></img>
-<img src="/img/gallery/beengcha_2.jpeg" width="50%"></img>
-<img src="/img/gallery/beengcha_3.jpeg" width="50%"></img>
-<img src="/img/gallery/beengcha_4.jpeg" width="50%"></img>
+<table>
+    <tr>
+        <td><img src="/img/gallery/beengcha.jpeg" width="50%"/></td>
+        <td><img src="/img/gallery/beengcha_2.jpeg" width="50%"/></td>
+    </tr>
+   <tr>
+        <td><img src="/img/gallery/beengcha_3.jpeg" width="50%"/></td>
+        <td><img src="/img/gallery/beengcha_4.jpeg" width="50%"/></td>
+    </tr>
+</table>
+
+
+
+
 
 <div style="visibility: hidden">
 ................................................................................................................................................................................................
