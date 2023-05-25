@@ -27,8 +27,11 @@ A fermented brew with earthy taste,
 And mellow notes that leave no waste.
 
 <img src="/img/wheel/beengcha.svg" width="70%"></img>
-
+<!-- more -->
 <img src="/img/gallery/beengcha.jpeg" width="50%"></img>
+<img src="/img/gallery/beengcha_2.jpeg" width="50%"></img>
+<img src="/img/gallery/beengcha_3.jpeg" width="50%"></img>
+<img src="/img/gallery/beengcha_4.jpeg" width="50%"></img>
 
 <div style="visibility: hidden">
 ................................................................................................................................................................................................
