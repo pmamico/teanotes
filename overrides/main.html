@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<script type="module">
+	import PhotoSwipeLightbox from '/javascript/photoswipe/dist/photoswipe-lightbox.esm.js';
+	const lightbox = new PhotoSwipeLightbox({
+		gallery: '#my-gallery',
+		children: 'a',
+		pswpModule: () => import('/javascript/photoswipe/dist/photoswipe.esm.js')
+	});
+	lightbox.init();
+</script>
+<link rel="stylesheet" href="/javascript/photoswipe/dist/photoswipe.css">
+{% endblock %}

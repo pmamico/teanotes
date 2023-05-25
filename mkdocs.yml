@@ -4,6 +4,7 @@ theme:
   logo: img/teapot.png
   favicon: img/favicon.ico
   language: en
+  custom_dir: overrides
   palette:
     primary: white
     scheme: default
@@ -16,7 +17,7 @@ plugins:
       post_readtime_words_per_minute: 200
       pagination_per_page: 4
 extra_css:
-  - frame.css
+  - css/frame.css
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
