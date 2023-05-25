@@ -24,11 +24,11 @@ Steep no.: 6
 ## Notes
 This classic pu-erh tea is well-balanced and suitable for those who are new to black teas.  
 A fermented brew with earthy taste,  
-And mellow notes that leave no waste.  
-
-<img src="/img/gallery/beengcha.jpeg" width="50%"></img>
+And mellow notes that leave no waste.
 
 <img src="/img/wheel/beengcha.svg" width="70%"></img>
+
+<img src="/img/gallery/beengcha.jpeg" width="50%"></img>
 
 <div style="visibility: hidden">
 ................................................................................................................................................................................................
