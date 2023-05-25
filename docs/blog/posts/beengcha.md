@@ -28,8 +28,7 @@ And mellow notes that leave no waste.
 
 <img src="/img/wheel/beengcha.svg" width="70%"></img>
 <!-- more -->
-<img src="/img/gallery/beengcha.jpeg" width="50%"/>
-<img src="/img/gallery/beengcha_3.jpeg" width="50%"/>
+<img src="/img/gallery/beengcha.jpeg" width="75%"/>
 
 ## Music recommendation
 
