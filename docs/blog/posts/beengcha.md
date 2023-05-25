@@ -28,16 +28,12 @@ And mellow notes that leave no waste.
 
 <img src="/img/wheel/beengcha.svg" width="70%"></img>
 <!-- more -->
-<table>
-    <tr>
-        <td><img src="/img/gallery/beengcha.jpeg" width="50%"/></td>
-        <td><img src="/img/gallery/beengcha_2.jpeg" width="50%"/></td>
-    </tr>
-   <tr>
-        <td><img src="/img/gallery/beengcha_3.jpeg" width="50%"/></td>
-        <td><img src="/img/gallery/beengcha_4.jpeg" width="50%"/></td>
-    </tr>
-</table>
+<img src="/img/gallery/beengcha.jpeg" width="50%"/>
+<img src="/img/gallery/beengcha_3.jpeg" width="50%"/>
+
+## Music recommendation
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1divptdjcWXvF1aflfTQnw?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 
 
