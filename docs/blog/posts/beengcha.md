@@ -5,11 +5,11 @@ categories:
 ---
 # Beengcha
 
-:material-star: :material-star: :material-star: :material-star: :material-star:
+:material-star: :material-star: :material-star: :material-star-outline: :material-star-outline:
 
 <div class="grid cards" markdown>
 - **General**  
-Varietal: Black Pu-Erh
+Varietal: Black Pu-Erh  
 Merchant: 1000Tea  
 Harvested: 2019   
 Sampled: 100 g  
