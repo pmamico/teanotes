@@ -1,0 +1,778 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12+insiders-4.34.0">
+    
+    
+      
+        <title>Getting Started - TeaNotes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.14411569.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.df142b89.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../css/frame.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-591BE4WH3V"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-591BE4WH3V",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-591BE4WH3V",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+<script type="module">
+	import PhotoSwipeLightbox from '/javascript/photoswipe/dist/photoswipe-lightbox.esm.js';
+	const lightbox = new PhotoSwipeLightbox({
+		gallery: '#my-gallery',
+		children: 'a',
+		pswpModule: () => import('/javascript/photoswipe/dist/photoswipe.esm.js')
+	});
+	lightbox.init();
+</script>
+<link rel="stylesheet" href="/javascript/photoswipe/dist/photoswipe.css">
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="TeaNotes" class="md-header__button md-logo" aria-label="TeaNotes" data-md-component="logo">
+      
+  <img src="../../../../img/teapot.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TeaNotes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="TeaNotes" class="md-nav__button md-logo" aria-label="TeaNotes" data-md-component="logo">
+      
+  <img src="../../../../img/teapot.png" alt="logo">
+
+    </a>
+    TeaNotes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    2023
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/archive/2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    2022
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/category/black-pe-erh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Black, Pe-Erh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/category/black/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Black
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/category/green/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Green
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/category/oolong/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Oolong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/category/silver-needle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Silver Needle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/category/white/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    White
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Getting Started</h1>
+
+<p>Before you start:</p>
+<ul>
+<li>PhotoSwipe requires predefined image dimensions, you must define the width and height of each image.</li>
+<li>PhotoSwipe is not designed to display very large images. Serve responsive images. Maximum recommended size is 3000x3000px. However, there is an <a href="https://github.com/dimsemenov/photoswipe-deep-zoom-plugin">experimental tiling plugin</a> that allows showing extremely large images.</li>
+<li>PhotoSwipe is designed with progressive enhancement in mind and works only in modern browsers. Always provide an alternative way to view the content (for example, link to the image).</li>
+</ul>
+<h2 id="initialization">Initialization</h2>
+<p>The PhotoSwipe consists of three parts:</p>
+<ol>
+<li><strong>Core</strong> (<code>photoswipe.esm.js</code>).</li>
+<li><strong>Lightbox</strong> (<code>photoswipe-lightbox.esm.js</code>) - loads <strong>Core</strong> and chooses when PhotoSwipe should be opened. Its file size is significantly smaller. It also loads the first image (in parallel with <strong>Core</strong>).</li>
+<li><strong>CSS</strong> (<code>photoswipe.css</code>) - a single file that controls all the styling. There are no external assets for icons - all of them are dynamically generated via JS and very tiny. Refer to <a href="/styling">styling</a> for more info.</li>
+</ol>
+<p>JS files are separated, so you can dynamically load <strong>Core</strong> only when the user needs it, thus reducing the size of your main bundle.</p>
+<p>The recommended way to use PhotoSwipe is using a single <code>&lt;script type="module"&gt;&lt;/script&gt;</code>, for example:</p>
+<pre><code class="language-html">&lt;script type=&quot;module&quot;&gt;
+import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#my-gallery',
+  children: 'a',
+  pswpModule: () =&gt; import('photoswipe/dist/photoswipe.esm.js')
+});
+lightbox.init();
+&lt;/script&gt;
+</code></pre>
+<p>Don't forget to include the CSS too:</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;photoswipe/dist/photoswipe.css&quot;&gt;
+</code></pre>
+<p>Alternatively, you may install PhotoSwipe via NPM or Yarn:</p>
+<pre><code>npm i photoswipe --save
+</code></pre>
+<pre><code class="language-js">import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#my-gallery',
+  children: 'a',
+  pswpModule: () =&gt; import('photoswipe')
+});
+lightbox.init();
+</code></pre>
+<p>Playgrounds: <a href="https://stackblitz.com/edit/js-o1vrod?file=index.js">StackBlitz</a>, <a href="https://codesandbox.io/s/vigorous-matan-zxok9x?file=/src/index.js">CodeSandbox</a>, <a href="https://codepen.io/dimsemenov/pen/ZEvypBw">CodePen (with unpkg)</a>.</p>
+<p>If you are unable to use ES modules, the transpiled version can be found in <a href="https://github.com/dimsemenov/PhotoSwipe/tree/master/dist/umd">dist/umd/</a> folder of the repository.</p>
+<h3 id="basic-vanilla-js-example">Basic vanilla JS example</h3>
+<p>import { gettingStartedTemplate } from '@site/src/components/PswpCodePreview/gallery-templates/getting-started.js';</p>
+<p><PswpCodePreview galleryID="getting-started" numItems="6" displayHTML templateFn={gettingStartedTemplate}></p>
+<p>```js pswpcode
+// Include Lightbox 
+import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';</p>
+<p>const lightbox = new PhotoSwipeLightbox({
+  // may select multiple "galleries"
+  gallery: '#gallery--getting-started',</p>
+<p>// Elements within gallery (slides)
+  children: 'a',</p>
+<p>// setup PhotoSwipe Core dynamic import
+  pswpModule: () =&gt; import('/photoswipe/photoswipe.esm.js')
+});
+lightbox.init();</p>
+<pre><code>
+&lt;/PswpCodePreview&gt;
+
+### Without dynamic import
+
+You don't have to dynamically import pswpModule, especially if PhotoSwipe is one of the primary features of your page.
+
+&lt;PswpCodePreview galleryID=&quot;no-dynamic-import&quot;&gt;
+
+```js pswpcode
+import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+// highlight-next-line
+import PhotoSwipe from '/photoswipe/photoswipe.esm.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery--no-dynamic-import',
+  children: 'a',
+  // highlight-next-line
+  pswpModule: PhotoSwipe
+});
+
+lightbox.init();
+</code></pre>
+<p></PswpCodePreview></p>
+<h2 id="required-html-markup">Required HTML markup</h2>
+<p>Each element that matches the selector should be or should contain link <code>&lt;a&gt;</code> element. The link must have such attributes:</p>
+<ul>
+<li>Image URL in <code>href</code> or <code>data-pswp-src</code> attribute (latter has higher priority).</li>
+<li>Image width in <code>data-pswp-width</code>.</li>
+<li>Image height in <code>data-pswp-height</code>.</li>
+</ul>
+<p>And optionally:</p>
+<ul>
+<li><code>&lt;img&gt;</code> thumbnail within the link element that will be displayed before the large image is loaded (applied only for the first image, can be adjusted via <code>thumbSelector</code>).</li>
+<li>Optional <code>data-cropped="true"</code> attribute if thumbnail is cropped. See also <a href="/opening-or-closing-transition#animating-from-cropped-thumbnail">Animating from Cropped Thumbnail</a>.</li>
+</ul>
+<p>PhotoSwipe API supports almost any markup and any data source, <a href="/data-sources#custom-html-markup">read more about it here</a>.</p>
+<h2 id="open-each-image-individually">Open each image individually</h2>
+<p><PswpCodePreview  galleryID="individual"></p>
+<p>```js pswpcode
+import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+const options = {
+  // highlight-next-line
+  gallery: '#gallery--individual a',
+  pswpModule: () =&gt; import('/photoswipe/photoswipe.esm.js')
+};
+const lightbox = new PhotoSwipeLightbox(options);
+lightbox.init();</p>
+<pre><code>
+&lt;/PswpCodePreview&gt;
+
+
+## Responsive images with srcset
+
+- Add `data-pswp-srcset` attribute. It supports the same markup as [native srcset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset). 
+- Attributes `data-pswp-width` and `data-pswp-height` should define the largest image size.
+- `sizes` attribute will be generated automatically based on actual width of the image. For example, if user zooms-in - `sizes` will be adjusted to the new zoom level.
+
+
+import { srcsetTemplate } from '@site/src/components/PswpCodePreview/gallery-templates/srcset-test.js';
+
+&lt;PswpCodePreview galleryID=&quot;responsive-images&quot; templateFn={srcsetTemplate}&gt;
+
+```js pswpcode
+import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+const options = {
+  gallery: '#gallery--responsive-images',
+  children: 'a',
+  pswpModule: () =&gt; import('/photoswipe/photoswipe.esm.js')
+};
+const lightbox = new PhotoSwipeLightbox(options);
+lightbox.init();
+</code></pre>
+<p></PswpCodePreview></p>
+<h2 id="supported-browsers-and-fallback">Supported browsers and fallback</h2>
+<ul>
+<li>The PhotoSwipe supports all browsers that <a href="https://caniuse.com/#search=module">support ES6 modules</a>.</li>
+<li>Thus, it might not work in IE11, Opera Mini, UC browser, and old versions of Chrome, Safari, and Firefox. Check your website/region statistics before deciding whether you should use PhotoSwipe or not.</li>
+<li>Users in unsupported browsers will still be able to view the large image if you use recommended HTML markup - link to image, or link to page that contains image.</li>
+<li>You may add any fallback via <code>script type="nomodule"</code>.</li>
+</ul>
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.8192e063.min.js"></script>
+      
+    
+  </body>
+</html>
