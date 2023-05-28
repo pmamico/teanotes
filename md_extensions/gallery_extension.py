@@ -1,57 +1,70 @@
+import os
+import re
 
-Gallery:  /img/gallery
+from PIL import Image
+from markdown import Extension
+from markdown.preprocessors import Preprocessor
+
+
+class GalleryExtension(Extension):
+    def extendMarkdown(self, md):
+        md.registerExtension(self)
+        md.preprocessors.register(GalleryProcessor(md), 'gallery', 25)
+
+
+def process_image(image_path):
+    with Image.open(image_path) as img:
+        return {"path": image_path.replace("./docs", ""), "width": img.width, "height": img.height}
+
+
+def process_gallery(gallery_path):
+    images = []
+    for filename in os.listdir("./docs"+gallery_path):
+        print(filename)
+        if filename.endswith((".jpg", ".jpeg", ".png")):
+            image_path = os.path.join("./docs"+gallery_path, filename)
+            images.append(process_image(image_path))
+    return images
+
+def generate_html(gallery: []):
+    for image in gallery:
+        print(image['path'])
+    return ""
+
+
+class GalleryProcessor(Preprocessor):
+
+    def run(self, lines):
+        new_lines = []
+        for line in lines:
+            if line.startswith("Gallery:"):
+                gallery_path = line.split(":")[1].strip()
+                print("Gallery: "+gallery_path)
+                # fajlok listazasa
+                gallery = process_gallery(gallery_path)
+
+                generate_html(gallery)
+                continue
+            new_lines.append(line)
+        return new_lines
+
+base="""
 <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
         <h1 class="text-center">
           <small><em>Gallery</em></small>
         </h1>
-        <!-- a href="/img/gallery/winter_window.jpeg">muta</a-->
-        <!-- Galley wrapper that contains all items -->
         <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          <!-- Use figure for a more semantic html -->
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
-            <a href="/img/gallery/winter_window.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
-              <!-- Thumbnail -->
-              <img src="/img/gallery/winter_window.jpeg" itemprop="thumbnail" alt="Image description">
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" style="display: none">
-            <a href="/img/gallery/hanafuda.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl">
-              <img src="/img/gallery/hanafuda.jpeg" itemprop="thumbnail" alt="Image description">
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/beengcha_vinyl.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
-              <img src="/img/gallery/beengcha_vinyl.jpeg" itemprop="thumbnail" alt="Image description">
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/japankert.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
-              <img src="/img/gallery/japankert.jpeg" itemprop="thumbnail" alt="Image description">
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/kanna.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" >
-              <img src="/img/gallery/kanna.jpeg" itemprop="thumbnail" alt="Image description">
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/puerh_zoom.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
-              <img src="/img/gallery/puerh_zoom.jpeg" itemprop="thumbnail" alt="Image description">
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/allo_keszlet.jpeg" data-caption="" data-width="480" data-height="600" itemprop="contentUrl" style="display: none">
-              <img src="/img/gallery/allo_keszlet.jpeg" itemprop="thumbnail" alt="Image description">
-            </a>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/img/gallery/napfeny.jpeg" data-caption="" data-width="600" data-height="480" itemprop="contentUrl" style="display: none">
-              <img src="/img/gallery/napfeny.jpeg" itemprop="thumbnail" alt="Image description">
-            </a>
-          </figure>
+"""
+figure="""
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="{{SRC}}" data-caption="" data-width="{{WIDTH}}" data-height="{{HEIGHT}}" itemprop="contentUrl" style="display: none">
+          <img src="{{SRC}}" itemprop="thumbnail" alt="">
+        </a>
+    </figure>
+"""
+footer="""
         </div>
       </div>
     </div>
@@ -157,3 +170,8 @@ Gallery:  /img/gallery
 
     }(jQuery));
   </script>
+
+"""
+
+
+

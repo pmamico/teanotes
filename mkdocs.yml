@@ -19,6 +19,7 @@ extra_css:
   - css/frame.css
 markdown_extensions:
   - md_extensions.rating_extension:RatingExtension
+  - md_extensions.gallery_extension:GalleryExtension
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
