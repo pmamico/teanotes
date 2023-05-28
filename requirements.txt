@@ -1,0 +1,6 @@
+jsmin
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+Markdown
+markdown2
