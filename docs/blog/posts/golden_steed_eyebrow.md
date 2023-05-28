@@ -5,7 +5,7 @@ categories:
 ---
 # Golden Steed Eyebrow
 
-:material-star: :material-star: :material-star: :material-star: :material-star:
+Rating: 5/5
 
 <div class="grid cards" markdown>
 - **General**  
