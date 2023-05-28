@@ -5,7 +5,7 @@ categories:
 ---
 # Bai Mu Dan
 
-:material-star: :material-star: :material-star: :material-star: :material-star-outline:
+Rating: 4/5
 
 
 <div class="grid cards" markdown>

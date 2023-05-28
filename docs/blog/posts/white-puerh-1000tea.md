@@ -5,7 +5,7 @@ categories:
 ---
 # Pressed White Tea Cake
 
-:material-star: :material-star: :material-star: :material-star: :material-star-half-full:
+Rating: 4.5/5
 
 
 <div class="grid cards" markdown>

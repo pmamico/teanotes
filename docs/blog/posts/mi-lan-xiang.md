@@ -5,7 +5,7 @@ categories:
 ---
 # Mi Lan Xiang
 
-:material-star: :material-star: :material-star: :material-star-outline: :material-star-outline:
+Rating: 3/5
 
 
 <div class="grid cards" markdown>
