@@ -17,6 +17,7 @@ plugins:
       pagination_per_page: 4
 extra_css:
   - css/frame.css
+  - javascript/photoswipe/dist/photoswipe.css
 markdown_extensions:
   - md_extensions.rating_extension:RatingExtension
   - md_extensions.gallery_extension:GalleryExtension
