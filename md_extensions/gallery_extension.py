@@ -58,9 +58,6 @@ base = """
 <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <h1 class="text-center">
-          <small><em>Gallery</em></small>
-        </h1>
         <div id="my-gallery" class="pswp-gallery pswp-gallery--single-column">
 """
 figure = """
