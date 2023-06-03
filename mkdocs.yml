@@ -2,7 +2,7 @@ site_name: TeaNotes
 theme:
   name: material
   logo: img/teapot.png
-  favicon: img/favicon.ico
+  favicon: img/teapot.png
   language: en
   custom_dir: overrides
   palette:

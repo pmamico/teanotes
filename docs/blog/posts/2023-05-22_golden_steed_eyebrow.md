@@ -10,7 +10,7 @@ Rating: 5/5
 <div class="grid cards" markdown>
 - **General**  
 Varietal: Jin Jun Mei from Fujian  
-Merchant: 1000Tea  
+Merchant: [1000Tea](https://1000tea.hu/teashop.php)  
 Harvested: 2021  
 Sampled: 5 g  
 - **Brew Stats**  
@@ -31,7 +31,6 @@ What surprised me was that I discovered a lot of citrusy and rosé-like flavors 
 
 <img src="/img/2023-05-22_golden_steed_eyebrow/wheel.svg" width="70%"></img>
 <!-- more -->
-## Music recommendation
+## Music
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7bM4Sgucn57IxRMNOUP9p0?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+<div style="position: relative; padding-bottom: 15%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://embed.tidal.com/tracks/96899560?layout=classic" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 85%; height: 1px; min-height: 100%; margin: 0 auto;"></iframe></div>

@@ -1,54 +1,20 @@
-'use strict';
+import * as d3 from 'd3';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.FlavorTown = undefined;
+import Datum from './internal/datum';
+import FlavorWheelConfig from './internal/config';
+import GridRenderer from './internal/grid-renderer';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+import { mustExist } from './common/preconditions';
+import { invertArray, wrapAroundArray } from './util/arrays';
+import Coordinate from './util/coordinate';
 
-var _d = require('d3');
-
-var d3 = _interopRequireWildcard(_d);
-
-var _datum = require('./internal/datum');
-
-var _datum2 = _interopRequireDefault(_datum);
-
-var _config = require('./internal/config');
-
-var _config2 = _interopRequireDefault(_config);
-
-var _gridRenderer = require('./internal/grid-renderer');
-
-var _gridRenderer2 = _interopRequireDefault(_gridRenderer);
-
-var _preconditions = require('./common/preconditions');
-
-var _arrays = require('./util/arrays');
-
-var _coordinate = require('./util/coordinate');
-
-var _coordinate2 = _interopRequireDefault(_coordinate);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var FlavorWheel = function () {
+class FlavorWheel {
     /**
      * Constructs a new FlavorWheel. This constructor does not initialize the
      * required SVG structure, and thus, the preferred way to create
      * a FlavorWheel is via the static `FlavorWheel.initialize` method.
      */
-    function FlavorWheel(_ref) {
-        var rootSvg = _ref.rootSvg,
-            config = _ref.config;
-
-        _classCallCheck(this, FlavorWheel);
-
+    constructor({ rootSvg, config }) {
         this.rootSvg = rootSvg;
         this.config = config;
 
@@ -83,167 +49,126 @@ var FlavorWheel = function () {
      * @param {object} config - An object literal containing configuration.
      * @returns {FlavorWheel}
      */
+    static initialize(targetSelector, config) {
+        config = new FlavorWheelConfig(config);
+        const rootSvg = FlavorWheel.renderBaseSvg(targetSelector, config);
+        new GridRenderer(config).render(rootSvg);
 
+        const appendGroup = function appendGroup(klass) {
+            return rootSvg.append('g').attr('class', klass);
+        };
+        appendGroup('flavor-wheel__data-polyline');
+        appendGroup('flavor-wheel__data-points');
 
-    _createClass(FlavorWheel, [{
-        key: 'addData',
+        return new FlavorWheel({ rootSvg, config });
+    }
 
+    static renderBaseSvg(targetSelector, config) {
+        return d3.select(targetSelector).attr('viewBox', config.viewBox).attr('version', '1.1').attr('baseProfile', 'full');
+    }
 
-        /**
-         * Adds a data set to render.
-         *
-         * The data set should be passed in as an array of `{ label, value }`
-         * object literals.
-         *
-         * The `key` will be passed to D3 as the key for this data set. See
-         * https://bost.ocks.org/mike/constancy/ for more information. To summarize,
-         * this `key` uniquely identifies this data set, which also allows you to
-         * use `addData` to update a data set as well.
-         *
-         * Usage example:
-         *
-         * ```js
-         * const wheel = FlavorWheel.initialize("#wheel", config);
-         * const data = [
-         *   { label: 'salty', value: 1 },
-         *   { label: 'spicy', value: 2 },
-         *   { label: 'floral', value: 3 },
-         *   { label: 'sour/tart', value: 4 },
-         *   { label: 'sweet', value: 5 },
-         *   { label: 'linger/\nfinish', value: 1 }
-         * ];
-         *
-         * // Add data
-         * wheel.addData(data, 'profile1');
-         *
-         * // Update data
-         * // Note: this can be done with an entirely new data set.
-         * data[2].value = 5;
-         * wheel.addData(data, 'profile1');
-         *
-         * // Add entirely new data
-         * wheel.addData(data, 'profile2');
-         * ```
-         *
-         * @param {object[]} data - Array of data to add.
-         * @param {string} key - Uniquely indentifiable string for this data set.
-         * @param {string} [className] - HTML class name. Currently unused.
-         */
-        value: function addData(data, key) {
-            var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+    /**
+     * Adds a data set to render.
+     *
+     * The data set should be passed in as an array of `{ label, value }`
+     * object literals.
+     *
+     * The `key` will be passed to D3 as the key for this data set. See
+     * https://bost.ocks.org/mike/constancy/ for more information. To summarize,
+     * this `key` uniquely identifies this data set, which also allows you to
+     * use `addData` to update a data set as well.
+     *
+     * Usage example:
+     *
+     * ```js
+     * const wheel = FlavorWheel.initialize("#wheel", config);
+     * const data = [
+     *   { label: 'salty', value: 1 },
+     *   { label: 'spicy', value: 2 },
+     *   { label: 'floral', value: 3 },
+     *   { label: 'sour/tart', value: 4 },
+     *   { label: 'sweet', value: 5 },
+     *   { label: 'linger/\nfinish', value: 1 }
+     * ];
+     *
+     * // Add data
+     * wheel.addData(data, 'profile1');
+     *
+     * // Update data
+     * // Note: this can be done with an entirely new data set.
+     * data[2].value = 5;
+     * wheel.addData(data, 'profile1');
+     *
+     * // Add entirely new data
+     * wheel.addData(data, 'profile2');
+     * ```
+     *
+     * @param {object[]} data - Array of data to add.
+     * @param {string} key - Uniquely indentifiable string for this data set.
+     * @param {string} [className] - HTML class name. Currently unused.
+     */
+    addData(data, key, className = null) {
+        mustExist(key);
 
-            (0, _preconditions.mustExist)(key);
+        this._pushData(data, key, className);
+        this._renderData();
+    }
 
-            this._pushData(data, key, className);
-            this._renderData();
+    _pushData(data, key, className = null) {
+        data = data.map(({ label, value }) => new Datum(this.config, label, value));
+        // _renderData() doesn't do anything explicit with the order of the
+        // data, so here we sort according to the original order specified in
+        // config.labels.
+        data.sort((d1, d2) => {
+            const config = this.config;
+            const lIndex1 = config.getLabelIndex(d1.label);
+            const lIndex2 = config.getLabelIndex(d2.label);
+            return lIndex1 - lIndex2;
+        });
+        const existingData = this.flavorProfiles.find(profile => profile.key === key);
+
+        if (!existingData) {
+            this.flavorProfiles.push({ data, key, className });
+        } else {
+            existingData.data = data;
+            existingData.className = className;
         }
-    }, {
-        key: '_pushData',
-        value: function _pushData(data, key) {
-            var _this = this;
+    }
 
-            var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+    _renderData() {
+        const config = this.config;
+        const flavorProfiles = this.flavorProfiles;
 
-            data = data.map(function (_ref2) {
-                var label = _ref2.label,
-                    value = _ref2.value;
-                return new _datum2.default(_this.config, label, value);
-            });
-            // _renderData() doesn't do anything explicit with the order of the
-            // data, so here we sort according to the original order specified in
-            // config.labels.
-            data.sort(function (d1, d2) {
-                var config = _this.config;
-                var lIndex1 = config.getLabelIndex(d1.label);
-                var lIndex2 = config.getLabelIndex(d2.label);
-                return lIndex1 - lIndex2;
-            });
-            var existingData = this.flavorProfiles.find(function (profile) {
-                return profile.key === key;
-            });
+        const polyPointGenerator = d3.line().x(datum => datum.coordinate.svgX).y(datum => datum.coordinate.svgY);
 
-            if (!existingData) {
-                this.flavorProfiles.push({ data: data, key: key, className: className });
-            } else {
-                existingData.data = data;
-                existingData.className = className;
-            }
-        }
-    }, {
-        key: '_renderData',
-        value: function _renderData() {
-            var config = this.config;
-            var flavorProfiles = this.flavorProfiles;
+        // https://bl.ocks.org/mbostock/3808218
+        // First, rebind data and update existing paths with new data
+        const dataPaths = this.dataPolyGroup.selectAll('path').data(flavorProfiles, profile => profile.key);
 
-            var polyPointGenerator = d3.line().x(function (datum) {
-                return datum.coordinate.svgX;
-            }).y(function (datum) {
-                return datum.coordinate.svgY;
-            });
+        // Create new paths
+        dataPaths.enter().append('path').attr('class', 'data-polyline__path')
+        // And, together with the new paths, update from the newly bound data
+        .merge(dataPaths).attr('d', profile => polyPointGenerator(wrapAroundArray(profile.data)));
 
-            // https://bl.ocks.org/mbostock/3808218
-            // First, rebind data and update existing paths with new data
-            var dataPaths = this.dataPolyGroup.selectAll('path').data(flavorProfiles, function (profile) {
-                return profile.key;
-            });
+        // Remove anything we removed. Not technically implemented yet.
+        dataPaths.exit().remove();
 
-            // Create new paths
-            dataPaths.enter().append('path').attr('class', 'data-polyline__path')
-            // And, together with the new paths, update from the newly bound data
-            .merge(dataPaths).attr('d', function (profile) {
-                return polyPointGenerator((0, _arrays.wrapAroundArray)(profile.data));
-            });
+        let pointGroups = this.dataPointsGroup.selectAll('g').data(flavorProfiles, profile => profile.key);
 
-            // Remove anything we removed. Not technically implemented yet.
-            dataPaths.exit().remove();
+        pointGroups.exit().remove();
 
-            var pointGroups = this.dataPointsGroup.selectAll('g').data(flavorProfiles, function (profile) {
-                return profile.key;
-            });
+        // Add new groups and merge it with existing groups so that we can
+        // update the data binding for each new and existing point within
+        // those groups.
+        pointGroups = pointGroups.enter().append('g').attr('class', 'data-points__point-group').merge(pointGroups);
 
-            pointGroups.exit().remove();
+        const flavorPoints = pointGroups.selectAll('circle').data(profile => profile.data);
 
-            // Add new groups and merge it with existing groups so that we can
-            // update the data binding for each new and existing point within
-            // those groups.
-            pointGroups = pointGroups.enter().append('g').attr('class', 'data-points__point-group').merge(pointGroups);
+        flavorPoints.enter().append('circle').attr('class', 'data-points__point').attr('r', 4).merge(flavorPoints).attr('cx', datum => datum.coordinate.svgX).attr('cy', datum => datum.coordinate.svgY);
 
-            var flavorPoints = pointGroups.selectAll('circle').data(function (profile) {
-                return profile.data;
-            });
+        flavorPoints.exit().remove();
+    }
+}
 
-            flavorPoints.enter().append('circle').attr('class', 'data-points__point').attr('r', 4).merge(flavorPoints).attr('cx', function (datum) {
-                return datum.coordinate.svgX;
-            }).attr('cy', function (datum) {
-                return datum.coordinate.svgY;
-            });
-
-            flavorPoints.exit().remove();
-        }
-    }], [{
-        key: 'initialize',
-        value: function initialize(targetSelector, config) {
-            config = new _config2.default(config);
-            var rootSvg = FlavorWheel.renderBaseSvg(targetSelector, config);
-            new _gridRenderer2.default(config).render(rootSvg);
-
-            var appendGroup = function appendGroup(klass) {
-                return rootSvg.append('g').attr('class', klass);
-            };
-            appendGroup('flavor-wheel__data-polyline');
-            appendGroup('flavor-wheel__data-points');
-
-            return new FlavorWheel({ rootSvg: rootSvg, config: config });
-        }
-    }, {
-        key: 'renderBaseSvg',
-        value: function renderBaseSvg(targetSelector, config) {
-            return d3.select(targetSelector).attr('viewBox', config.viewBox).attr('version', '1.1').attr('baseProfile', 'full');
-        }
-    }]);
-
-    return FlavorWheel;
-}();
-
-exports.default = FlavorWheel;
-var FlavorTown = exports.FlavorTown = FlavorWheel;
+export default FlavorWheel;
+export const FlavorTown = FlavorWheel;

@@ -1,10 +1,3 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.invertArray = invertArray;
-exports.wrapAroundArray = wrapAroundArray;
 /**
  * Invert an array into a Map that maps values to their original indexes
  *
@@ -16,9 +9,9 @@ exports.wrapAroundArray = wrapAroundArray;
  * ```
  * @param {[any]} array  The array to invert.
  */
-function invertArray(array) {
-  var inverse = new Map();
-  array.forEach(function (value, index) {
+export function invertArray(array) {
+  const inverse = new Map();
+  array.forEach((value, index) => {
     inverse.set(value, index);
   });
   return inverse;
@@ -36,7 +29,7 @@ function invertArray(array) {
  *
  * @param {[any]} array  The array to wrap around.
  */
-function wrapAroundArray(array) {
-  var first = array[0];
+export function wrapAroundArray(array) {
+  const first = array[0];
   return array.concat(first);
 }

@@ -11,7 +11,7 @@ Rating: 4.5/5
 <div class="grid cards" markdown>
 - **General**  
 Varietal: White Pu Erh  
-Merchant:   1000Tea  
+Merchant:   [1000Tea](https://1000tea.hu/teashop.php)  
 Harvested: 2021 Spring  
 Sampled: 200 g  
 Price: 15 $
@@ -31,9 +31,9 @@ mirrors the act of breathing while drinking.
 This tea boasts a moderate body and a floral aroma that is sure to delight the senses.  
 Good for relaxation.  
 
-<img src="/img/2023-05-15_white-puerh-1000tea/wheel.svg" width="70%"></img>
+<img src="/img/2023-05-15_white-puerh-[1000Tea](https://1000tea.hu/teashop.php)/wheel.svg" width="70%"></img>
 <!-- more -->
 
-## Music recommendation
+## Music
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/01c6K35tB5HoVwvTUf9ibA?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div style="position: relative; padding-bottom: 15%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://embed.tidal.com/tracks/124430808?layout=classic" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 85%; height: 1px; min-height: 100%; margin: 0 auto;"></iframe></div>

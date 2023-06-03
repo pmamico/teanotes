@@ -1,16 +1,8 @@
-'use strict';
+import { exists } from './base';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.mustExist = mustExist;
-exports.checkState = checkState;
-
-var _base = require('./base');
-
-function mustExist(value, message) {
-  if (!(0, _base.exists)(value)) {
-    var error = new Error(message);
+export function mustExist(value, message) {
+  if (!exists(value)) {
+    let error = new Error(message);
     error.name = 'NotExistError';
     throw error;
   }
@@ -18,9 +10,9 @@ function mustExist(value, message) {
   return value;
 };
 
-function checkState(condition, message) {
+export function checkState(condition, message) {
   if (!condition) {
-    var error = new Error(message);
+    let error = new Error(message);
     error.name = 'StateError';
     throw error;
   }

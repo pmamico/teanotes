@@ -11,7 +11,7 @@ Rating: 3/5
 <div class="grid cards" markdown>
 - **General**  
 Varietal: Mi Lan Xiang, roasted oolong  
-Merchant:   Flying Bird  
+Merchant:   [Flying Bird](https://flyingbirdteahouse.hu/)  
 Harvested: 2022  
 Sampled: 50 g
 - **Brew Stats**  
@@ -32,8 +32,6 @@ This energizing tea is sure to invigorate your senses and leave you feeling refr
 
 <!-- more -->
 
-## Music recommendation
+## Music
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4VKlfCoDznjfJk83ACH7qF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-
+<div style="position: relative; padding-bottom: 15%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://embed.tidal.com/tracks/184777618?layout=classic" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 85%; height: 1px; min-height: 100%; margin: 0 auto;"></iframe></div>
