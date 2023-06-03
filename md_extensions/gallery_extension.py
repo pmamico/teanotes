@@ -18,7 +18,9 @@ def process_image(image_path):
 
 def process_gallery(gallery_path):
     images = []
-    for filename in os.listdir("./docs" + gallery_path):
+    files = os.listdir("./docs" + gallery_path)
+    sorted_files = sorted(files)
+    for filename in sorted_files:
         if filename.endswith((".jpg", ".jpeg", ".png")):
             image_path = os.path.join("./docs" + gallery_path, filename)
             images.append(process_image(image_path))
