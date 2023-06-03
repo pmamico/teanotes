@@ -17,7 +17,7 @@
       
       
       <link rel="icon" href="../../../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12+insiders-4.34.0">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.14+insiders-4.35.1">
     
     
       
@@ -45,6 +45,8 @@
     
     
       <link rel="stylesheet" href="../../../../../css/frame.css">
+    
+      <link rel="stylesheet" href="../../../../../javascript/photoswipe/dist/photoswipe.css">
     
     <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -678,15 +680,54 @@ Steep no.: 6  </li>
 <p>This classic pu-erh tea is well-balanced and suitable for those who are new to black teas.<br />
 A fermented brew with earthy taste,<br />
 And mellow notes that leave no waste.</p>
-<p><img src="/img/wheel/beengcha.svg" width="70%"></img></p>
+<p><img src="/img/2023-05-25_beengcha/wheel.svg" width="70%"></img></p>
 <!-- more -->
 
 <h2 id="music-recommendation">Music recommendation</h2>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6qReWcyQMZLn8pRwin3r0u?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<h2 id="visuals">Visuals</h2>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div id="my-gallery" class="pswp-gallery pswp-gallery--single-column">
 
-<div style="visibility: hidden">
-................................................................................................................................................................................................
-</div>
+        <a href="/img/2023-05-25_beengcha/gallery/puerh_zoom.jpeg" data-caption="" 
+            data-pswp-width="640" 
+            data-pswp-height="422" 
+            target="_blank"
+            style="">
+          <img src="/img/2023-05-25_beengcha/gallery/puerh_zoom.jpeg" alt="">
+        </a>
+
+        <a href="/img/2023-05-25_beengcha/gallery/beengcha_vinyl.jpeg" data-caption="" 
+            data-pswp-width="640" 
+            data-pswp-height="480" 
+            target="_blank"
+            style="display: none">
+          <img src="/img/2023-05-25_beengcha/gallery/beengcha_vinyl.jpeg" alt="">
+        </a>
+
+        <a href="/img/2023-05-25_beengcha/gallery/beengcha_3.jpeg" data-caption="" 
+            data-pswp-width="480" 
+            data-pswp-height="640" 
+            target="_blank"
+            style="display: none">
+          <img src="/img/2023-05-25_beengcha/gallery/beengcha_3.jpeg" alt="">
+        </a>
+
+    <script type="module">
+        import PhotoSwipeLightbox from '/javascript/photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#my-gallery',
+          children: 'a',
+          pswpModule: () => import('/javascript/photoswipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+        </div>
+      </div>
+    </div>
+  </div>
 
   
   
@@ -731,7 +772,7 @@ And mellow notes that leave no waste.</p>
     <script id="__config" type="application/json">{"base": "../../../../..", "features": [], "search": "../../../../../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.8192e063.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.10c6cd24.min.js"></script>
       
     
   </body>
