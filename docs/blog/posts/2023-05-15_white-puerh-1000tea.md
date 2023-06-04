@@ -31,7 +31,7 @@ mirrors the act of breathing while drinking.
 This tea boasts a moderate body and a floral aroma that is sure to delight the senses.  
 Good for relaxation.  
 
-<img src="/img/2023-05-15_white-puerh-[1000Tea](https://1000tea.hu/teashop.php)/wheel.svg" width="70%"></img>
+<img src="/img/2023-05-15_white-puerh-1000Tea/wheel.svg" width="70%"></img>
 <!-- more -->
 
 ## Music
