@@ -11,6 +11,7 @@ theme:
 nav:
   - Blog:
       - blog/index.md
+  - Tree Map: teatipusok.md
 plugins:
   - blog:
       post_readtime_words_per_minute: 200
@@ -21,6 +22,7 @@ extra_css:
 markdown_extensions:
   - md_extensions.rating_extension:RatingExtension
   - md_extensions.gallery_extension:GalleryExtension
+  - md_extensions.treechart_extension:TreeChartExtension
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
