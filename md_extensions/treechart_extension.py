@@ -38,12 +38,8 @@ head = """
 <style>
     .node circle {
         fill: #fff;
-        stroke: steelblue;
+        stroke: black;
         stroke-width: 3px;
-    }
-
-    .node text {
-        font: 12px sans-serif;
     }
 
     .link {
@@ -52,16 +48,16 @@ head = """
         stroke-width: 2px;
     }
 </style>
-<div id="map"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.js"></script>
+<div id="d3" style="width:450%"></div>
 """
 
 body = """
 <script>
 	var fields =  {{{FIELDS}}};
 
-	var key = "a.b.c";
+	var key = "Tea.White.Bai Mu Dan";
 
 	const buildTree = (fields) => {
 		let tree = {
@@ -94,14 +90,14 @@ body = """
 	var treeData = buildTree(fields)
 
 	// Set the dimensions and margins of the diagram
-	var margin = {top: 20, right: 0, bottom: 30, left: 70},
+	var margin = {top: 0, right: 0, bottom: 0, left: 70},
 		width = window.innerWidth - margin.left - margin.right,
 		height = 700 - margin.top - margin.bottom;
 
 	// append the svg object to the body of the page
 	// appends a 'group' element to 'svg'
 	// moves the 'group' element to the top left margin
-	var svg = d3.select("div.md-content").append("svg")
+	var svg = d3.select("#d3").append("svg")
 		.attr("id", "svg")
 		//.attr("width", width + margin.right + margin.left)
 		//.attr("height", height + margin.top + margin.bottom)
@@ -181,7 +177,7 @@ body = """
 	function update(source) {
 		var currentHeight = getHeight(root);
 		var newWidth = window.innerWidth;
-		document.getElementById("svg").style.width = newWidth - 500;
+		document.getElementById("svg").style.width = newWidth;//-500
 		// Assigns the x and y position for the nodes
 		var treeData = treemap(root);
 
@@ -252,7 +248,7 @@ body = """
 					// clicked leaf node
 					return '#F88C36';
 				}
-				return d._children ? "lightsteelblue" : "#fff";
+				return d._children ? "#ccc" : "#fff";//d.data.name
 			})
 			.attr('cursor', 'pointer');
 

@@ -11,7 +11,7 @@ theme:
 nav:
   - Blog:
       - blog/index.md
-  - Tree Map: teatipusok.md
+  - Tree Map: treechart.md
 plugins:
   - blog:
       post_readtime_words_per_minute: 200
