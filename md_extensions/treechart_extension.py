@@ -50,7 +50,7 @@ head = """
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.js"></script>
-<div id="d3" style="width:450%"></div>
+<div id="d3" style="width:150%"></div>
 """
 
 body = """
