@@ -1,12 +1,6 @@
 
 
 {{{TreeChart
-Green
-Yellow
-White
-Oolong
-Black
-Pu-erh
 White.Bai Hao Yinzhen
 White.Bai Mu Dan
 White.Shou Mei

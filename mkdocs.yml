@@ -8,6 +8,8 @@ theme:
   palette:
     primary: white
     scheme: default
+  features:
+    - announce.dismiss
 nav:
   - Blog:
       - blog/index.md
@@ -16,6 +18,13 @@ plugins:
   - blog:
       post_readtime_words_per_minute: 200
       pagination_per_page: 4
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
 extra_css:
   - css/frame.css
   - javascript/photoswipe/dist/photoswipe.css

@@ -3,4 +3,5 @@ Markdown~=3.4.3
 markdown2
 setuptools~=58.0.4
 Pillow~=9.0.1
+mkdocs-rss-plugin
 #mkdocs-material insider
