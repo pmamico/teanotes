@@ -306,5 +306,10 @@
 		update(root)
 	}, 500));
 
+	setTimeout(function() {
+		var firstNode = d3.select("g.node:first-child");
+		firstNode.dispatch("click");
+	}, 500);
+
 
 </script>
