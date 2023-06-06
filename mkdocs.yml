@@ -1,4 +1,5 @@
 site_name: TeaNotes
+site_url: teanotes.blog
 theme:
   name: material
   logo: img/teapot.png
