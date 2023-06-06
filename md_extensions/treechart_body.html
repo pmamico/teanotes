@@ -1,5 +1,5 @@
 <script>
-	var fields =  {{{FIELDS}}};
+	var fields =  ["FIELDS"];
 
 	var key = "Tea.White.Bai Mu Dan";
 
@@ -154,13 +154,21 @@
 			})
 			.on('click', click);
 
+		var colorMap = {"COLORMAP":""}
+
+		function getColor(nodename){
+            var color = colorMap[nodename];
+			console.log("color "+color);
+			return color;
+        }
+
 		// nodeEnter.call(tip);
 		// Add Circle for the nodes
 		nodeEnter.append('circle')
 			.attr('class', 'node')
 			.attr('r', 1e-6)
 			.style("fill", function(d) {
-				return d._children ? "lightsteelblue" : "#fff";
+				return d._children ? getColor(d.data.name) : getColor(d.data.name);
 			})
 		// .on('mouseover', tip.show) // add tip
 		// .on('mouseout', tip.hide);
@@ -193,7 +201,14 @@
 					// clicked leaf node
 					return '#F88C36';
 				}
-				return d._children ? "#ccc" : "#fff";//d.data.name
+				return d._children ? getColor(d.data.name) : getColor(d.data.name);//d.data.name
+			})
+            .style("stroke-width", function(d) {
+				if (getPath(d) === key) {
+					// clicked leaf node
+					return '1px';
+				}
+				return d._children ? "3px" : "1px";//d.data.name
 			})
 			.attr('cursor', 'pointer');
 

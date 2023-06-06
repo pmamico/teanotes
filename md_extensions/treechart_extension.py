@@ -31,7 +31,10 @@ class TreeChartProcessor(Preprocessor):
         if not block:
             return lines
         new_lines.append(head)
-        new_lines.append(body.replace("{{{FIELDS}}}", str(elements)));
+        new_lines.append(
+            body.replace('["FIELDS"]', str(elements))
+                .replace('{"COLORMAP":""}', colorMap)
+        )
         return new_lines
 
 
@@ -40,3 +43,6 @@ with open('md_extensions/treechart_head.html', 'r') as file:
 
 with open('md_extensions/treechart_body.html', 'r') as file:
     body = file.read()
+
+with open('md_extensions/colormap.json', 'r') as file:
+    colorMap = file.read()
