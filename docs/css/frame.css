@@ -44,3 +44,19 @@
     text-decoration: underline;
 }
 
+#isso-postbox-website{
+    display: none;
+}
+
+#isso-postbox-email{
+    display: none;
+}
+
+p label[for="isso-postbox-email"] {
+    display: none; !important;
+}
+
+p label[for="isso-postbox-website"] {
+    display: none; !important;
+}
+
