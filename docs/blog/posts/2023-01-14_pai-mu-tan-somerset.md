@@ -1,8 +1,10 @@
 ---
 date: 2023-01-14
 comments: true
-categories:
+tags:
 - White
+categories:
+- TeaNote
 ---
 # Bai Mu Dan
 

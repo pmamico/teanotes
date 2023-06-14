@@ -14,6 +14,7 @@ theme:
 nav:
   - Blog:
       - blog/index.md
+      - blog/tags.md
   - Varieties: varieties.md
 plugins:
   - blog:
@@ -26,6 +27,8 @@ plugins:
       categories:
         - categories
         - tags
+  - tags:
+      tags_file: blog/tags.md
 extra_css:
   - css/frame.css
   - javascript/photoswipe/dist/photoswipe.css
@@ -46,6 +49,9 @@ markdown_extensions:
   - toc:
      toc_depth: 0
      permalink: false
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 extra:
   generator: false
   analytics:
