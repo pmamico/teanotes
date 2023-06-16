@@ -34,6 +34,3 @@ What surprised me was that I discovered a lot of citrusy and rosé-like flavors 
 
 <img src="/img/2023-05-22_golden_steed_eyebrow/wheel.svg" width="70%"></img>
 <!-- more -->
-## Music
-
-<div style="position: relative; padding-bottom: 15%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://embed.tidal.com/tracks/96899560?layout=classic" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 85%; height: 1px; min-height: 100%; margin: 0 auto;"></iframe></div>
