@@ -24,6 +24,8 @@ plugins:
       pagination_per_page: 4
   - rss:
       match_path: blog/posts/.*
+      site_description: "Tea notes and less"
+      enabled: true
       date_from_meta:
         as_creation: date
       categories:
