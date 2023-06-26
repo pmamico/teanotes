@@ -17,6 +17,7 @@ nav:
       - blog/tags.md
   - Gallery:
       - gallery/china.md
+      - gallery/japan.md
   - Varieties: varieties.md
 plugins:
   - blog:
