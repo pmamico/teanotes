@@ -1,7 +1,7 @@
 ---
 categories:
 - Music
-date: 2023-06-24
+date: 2023-06-01
 comments: true
 ---
 # Ambient of the week
@@ -17,4 +17,8 @@ The physical vinyl itself has a green hue, which perfectly complements the lush,
 organic soundscapes contained within.   
 The music unfolds gently yet purposefully,   
 like a seedling sprouting into a full-grown plant.   
-Overall, "Source" is a masterful example of ambient music that is both soothing and thought-provoking.
+Overall, "Source" is a masterful example of ambient music that is both soothing and thought-provoking.  
+Not only does a good frothy matcha tea complement it in color, but also in its life-giving power.  
+
+<img src="/img/music/source.jpeg" width="70%"></img>
+
