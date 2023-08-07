@@ -12,7 +12,7 @@ Rating: 4.5/5
 
 <div class="grid cards" markdown>
 - **General**  
-Varietal:  Dong Fang Mei Ren aka "Oriental Beauty" 
+Varietal:  Dong Fang Mei Ren  
 Merchant:   [Flying Bird](https://flyingbirdteahouse.hu/)   
 Harvested: 2023  
 Sampled: 50 g
