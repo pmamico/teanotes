@@ -24,11 +24,10 @@ Brew time: 1 m
 Steep no.: 4 
 </div>
 
-<img src="/img/2023-08-07_oriental_beauty/preview.jpeg" width="50%"></img>
+<img src="/img/2023-08-07_oriental_beauty/wheel.svg" width="70%"></img>
 
 <!-- more -->
 
-<img src="/img/2023-08-07_oriental_beauty/wheel.svg" width="70%"></img>
 
 ## Notes  
 
@@ -41,6 +40,10 @@ The high degree of fermentation, around 60-70%, brings out a rich complexity in 
 The liquor of this tea often presents a beautiful amber color with sweet and muscatel bouquet.   
 A proper brew of Oriental Beauty can bring forth a multi-layered taste, with notes ranging from ripe fruits to honey, often leaving a lasting aftertaste that is refreshing and comforting.
 
+
+## Visual
+
+<img src="/img/2023-08-07_oriental_beauty/preview.jpeg" width="50%"></img>
 
 
 
