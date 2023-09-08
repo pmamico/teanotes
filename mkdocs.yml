@@ -12,13 +12,12 @@ theme:
   features:
     - announce.dismiss
 nav:
-  - Blog:
-      - blog/index.md
-      - blog/tags.md
+  - Blog: blog/index.md
   - Gallery:
       - gallery/china.md
       - gallery/japan.md
   - Varieties: varieties.md
+  - Tags: blog/tags.md
 plugins:
   - blog:
       post_readtime_words_per_minute: 200
