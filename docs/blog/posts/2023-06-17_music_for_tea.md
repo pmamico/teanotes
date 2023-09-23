@@ -4,7 +4,7 @@ categories:
 date: 2023-05-01
 comments: true
 ---
-# Music for tea  
+# Martin Nonstatic: Ligand  
 
 <img src="/img/music/ligand.jpeg" width="70%"></img>
 
